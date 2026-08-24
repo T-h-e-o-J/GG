@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Goonius Gardeners are three local Dunedin students helping gardens look their best while raising money for their futures." />
+  <meta name="description" content="Goonius Gardeners are three local Dunedin students helping Dunedin gardens look their best with practical, reliable garden care." />
   <title>Goonius Gardeners | Dunedin garden care</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,7 @@
       <a href="#story">Our story</a>
       <a href="#contact">Get a quote</a>
     </nav>
-    <a class="header-cta" href="#contact">Book a tidy-up <span aria-hidden="true">↗</span></a>
+    <a class="header-cta" href="#contact">Book a tidy-up <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></a>
   </header>
 
   <main id="top">
@@ -31,8 +31,8 @@
         <h1>Good gardens.<br /><em>Good energy.</em></h1>
         <p class="hero-intro">Three local students with a shovel, a plan, and a soft spot for gardens that need a little love.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#contact">Get a free quote <span>↗</span></a>
-          <a class="text-link" href="https://www.instagram.com/gooniusgardeners/" target="_blank" rel="noreferrer">See us on Instagram <span>↗</span></a>
+          <a class="button button-dark" href="#contact">Get a free quote <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></a>
+          <a class="text-link" href="https://www.instagram.com/gooniusgardeners/" target="_blank" rel="noreferrer">See us on Instagram <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></a>
         </div>
       </div>
       <div class="hero-art reveal reveal-delay" aria-label="Illustration of a thriving garden">
@@ -54,15 +54,15 @@
     <section class="services section" id="services">
       <div class="section-heading reveal"><p class="eyebrow">The useful stuff</p><h2>A little help<br /><em>goes a long way.</em></h2></div>
       <div class="service-grid">
-        <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon service-icon-tools" aria-hidden="true"></div><h3>Regular maintenance</h3><p>Lawn mowing, edging, weeding, and the little jobs that keep your garden feeling cared for.</p></article>
-        <article class="service-card service-card-lime reveal reveal-delay"><span class="service-number">02</span><div class="service-icon service-icon-spark" aria-hidden="true"></div><h3>Hedges & tidy-ups</h3><p>Bring back the shape and breathe some life into overgrown hedges, borders, and outdoor spaces.</p></article>
-        <article class="service-card reveal reveal-delay-two"><span class="service-number">03</span><div class="service-icon service-icon-home" aria-hidden="true"></div><h3>Seasonal clean-ups</h3><p>A fresh start for autumn, spring, or whenever your garden needs a proper reset.</p></article>
+        <article class="service-card reveal"><span class="service-number">01</span><div class="service-icon" aria-hidden="true"><i data-lucide="wrench"></i></div><h3>Regular maintenance</h3><p>Lawn mowing, edging, weeding, and the little jobs that keep your garden feeling cared for.</p></article>
+        <article class="service-card service-card-lime reveal reveal-delay"><span class="service-number">02</span><div class="service-icon" aria-hidden="true"><i data-lucide="sparkles"></i></div><h3>Hedges & tidy-ups</h3><p>Bring back the shape and breathe some life into overgrown hedges, borders, and outdoor spaces.</p></article>
+        <article class="service-card reveal reveal-delay-two"><span class="service-number">03</span><div class="service-icon" aria-hidden="true"><i data-lucide="house"></i></div><h3>Seasonal clean-ups</h3><p>A fresh start for autumn, spring, or whenever your garden needs a proper reset.</p></article>
       </div>
     </section>
 
     <section class="story section" id="story">
       <div class="story-stamp">LOCAL<br /><b>YOUTH</b><br />POWER</div>
-      <div class="story-copy reveal"><p class="eyebrow">Why Goonius?</p><h2>We’re growing<br /><em>something good.</em></h2><p>Goonius Gardeners is a garden maintenance group run by three young students. We’re putting in the hours to raise money, learn useful skills, and help Dunedin homes feel a bit more looked after.</p><p>Small job or full garden reset, we bring the same attitude: turn up, work hard, and leave the place better than we found it.</p><a class="text-link" href="#contact">Tell us about your garden <span>↗</span></a></div>
+      <div class="story-copy reveal"><p class="eyebrow">Why Goonius?</p><h2>We’re growing<br /><em>something good.</em></h2><p>Goonius Gardeners is a garden maintenance group run by three young students. We’re building practical skills, taking pride in our work, and helping Dunedin homes feel a bit more looked after.</p><p>Small job or full garden reset, we bring the same attitude: turn up, work hard, and leave the place better than we found it.</p><a class="text-link" href="#contact">Tell us about your garden <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></a></div>
     </section>
 
     <section class="contact section" id="contact">
@@ -74,7 +74,8 @@
         <label>Your name<input required name="name" type="text" placeholder="e.g. Alex Smith" /></label>
         <label>Email or phone<input required name="contact" type="text" placeholder="How should we reach you?" /></label>
         <label>What needs doing?<textarea required name="job" rows="3" placeholder="A lawn mow, hedge trim, full tidy-up..."></textarea></label>
-        <button class="button button-dark" type="submit">Send enquiry <span>↗</span></button>
+        <label class="privacy-consent"><input required name="privacy-consent" type="checkbox" /> <span>I have permission to provide these details and have read the <a href="#privacy">privacy notice</a>.</span></label>
+        <button class="button button-dark" type="submit">Send enquiry <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></button>
         <p class="form-note">We’ll be in touch soon. You can also call <a href="tel:02102366599">0210 236 6599</a>.</p>
       </form>
     </section>
@@ -83,8 +84,16 @@
   <footer class="site-footer">
     <a class="brand" href="#top"><span class="brand-mark"><img src="logo.jpg" alt="Goonius Gardeners logo" /></span><span class="brand-name">Goonius<br /><b>Gardeners</b></span></a>
     <div class="footer-center">Dunedin garden care, by locals who care.<br /><a href="tel:02102366599">0210 236 6599</a><br /><small>&copy; 2026 Goonius Gardeners</small></div>
-    <div class="footer-links"><a href="https://www.instagram.com/gooniusgardeners/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="#contact">Get a quote ↗</a></div>
+    <div class="footer-links"><a href="https://www.instagram.com/gooniusgardeners/" target="_blank" rel="noreferrer">Instagram <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></a><a href="#contact">Get a quote <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></a></div>
   </footer>
+  <section class="privacy-notice" id="privacy" aria-labelledby="privacy-heading">
+    <h2 id="privacy-heading">Privacy notice</h2>
+    <p>We collect your name, contact details, and garden enquiry so Goonius Gardeners can respond to your request and prepare a quote. Please do not include sensitive information or someone else’s details without their permission.</p>
+    <p>Form submissions are sent through <a href="https://formsubmit.co/" target="_blank" rel="noreferrer">FormSubmit</a> to gooniusgardeners@gmail.com. We use the information only for your enquiry and keep it only as long as reasonably needed. You can ask to access or correct your information by contacting us at <a href="mailto:gooniusgardeners@gmail.com">gooniusgardeners@gmail.com</a>.</p>
+    <p>For children and young people, a parent or guardian should submit the enquiry or give permission before contact details are provided.</p>
+  </section>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>

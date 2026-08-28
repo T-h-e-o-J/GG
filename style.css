@@ -97,6 +97,9 @@ a { color: inherit; text-decoration: none; }
 .quote-form label { font-size: 12px; font-weight: 700; }
 .quote-form input, .quote-form textarea { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; color: var(--ink); display: block; font: inherit; margin-top: 7px; outline: 0; padding: 10px 0; resize: vertical; width: 100%; }
 .quote-form input:focus, .quote-form textarea:focus { border-color: var(--green); }
+.image-attachment span { font-weight: 400; opacity: 0.65; }
+.image-attachment input { border: 0; cursor: pointer; font-size: 13px; padding: 8px 0; }
+.image-attachment input::file-selector-button { background: var(--lime); border: 0; border-radius: 99px; color: var(--ink); cursor: pointer; font: inherit; font-weight: 700; margin-right: 12px; padding: 9px 13px; }
 .quote-form .button { align-self: flex-start; margin-top: 7px; }
 .form-note { font-size: 11px; margin: 0; opacity: 0.65; }
 .form-note a, .form-confirmation a { color: var(--green); font-weight: 700; }

@@ -67,13 +67,14 @@
 
     <section class="contact section" id="contact">
       <div class="contact-heading reveal"><p class="eyebrow">Let’s get growing</p><h2>What’s your<br /><em>garden saying?</em></h2><p>Tell us what needs doing and we’ll get back to you with a simple quote.</p></div>
-      <form class="quote-form reveal reveal-delay" id="quote-form" action="https://formsubmit.co/gooniusgardeners@gmail.com" method="POST">
+      <form class="quote-form reveal reveal-delay" id="quote-form" action="https://formsubmit.co/gooniusgardeners@gmail.com" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_subject" value="New Goonius Gardeners enquiry" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
         <label>Your name<input required name="name" type="text" placeholder="e.g. Alex Smith" /></label>
         <label>Email or phone<input required name="contact" type="text" placeholder="How should we reach you?" /></label>
         <label>What needs doing?<textarea required name="job" rows="3" placeholder="A lawn mow, hedge trim, full tidy-up..."></textarea></label>
+        <label class="image-attachment">Add a garden photo <span>(optional)</span><input name="attachment" type="file" accept="image/*" /></label>
         <label class="privacy-consent"><input required name="privacy-consent" type="checkbox" /> <span>I have permission to provide these details and have read the <a href="#privacy">privacy notice</a>.</span></label>
         <button class="button button-dark" type="submit">Send enquiry <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></button>
         <p class="form-note">We’ll be in touch soon. You can also call <a href="tel:02102366599">0210 236 6599</a>.</p>

@@ -97,6 +97,14 @@ a { color: inherit; text-decoration: none; }
 .quote-form label { font-size: 12px; font-weight: 700; }
 .quote-form input, .quote-form textarea { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; color: var(--ink); display: block; font: inherit; margin-top: 7px; outline: 0; padding: 10px 0; resize: vertical; width: 100%; }
 .quote-form input:focus, .quote-form textarea:focus { border-color: var(--green); }
+.choice-group { border: 1px solid var(--line); margin: 0; padding: 18px; }
+.choice-group legend { font-size: 12px; font-weight: 700; padding: 0 8px; }
+.choice-group legend span { font-weight: 400; opacity: 0.65; }
+.choice-grid { display: grid; gap: 10px 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.choice { align-items: center; background: rgba(215, 239, 134, 0.18); border: 1px solid transparent; cursor: pointer; display: flex; font-size: 12px !important; font-weight: 500 !important; gap: 8px; min-height: 42px; padding: 9px 10px; transition: background 0.2s, border-color 0.2s, transform 0.2s; }
+.choice:hover { border-color: var(--green); transform: translateY(-1px); }
+.choice:has(input:checked) { background: var(--lime); border-color: var(--green); font-weight: 700 !important; }
+.choice input { accent-color: var(--green); flex: 0 0 auto; height: 16px; margin: 0; width: 16px; }
 .image-attachment span { font-weight: 400; opacity: 0.65; }
 .image-attachment input { border: 0; cursor: pointer; font-size: 13px; padding: 8px 0; }
 .image-attachment input::file-selector-button { background: var(--lime); border: 0; border-radius: 99px; color: var(--ink); cursor: pointer; font: inherit; font-weight: 700; margin-right: 12px; padding: 9px 13px; }

@@ -74,6 +74,25 @@
         <label>Your name<input required name="name" type="text" placeholder="e.g. Alex Smith" /></label>
         <label>Email or phone<input required name="contact" type="text" placeholder="How should we reach you?" /></label>
         <label>What needs doing?<textarea required name="job" rows="3" placeholder="A lawn mow, hedge trim, full tidy-up..."></textarea></label>
+        <fieldset class="choice-group">
+          <legend>Choose the services you need <span>(optional)</span></legend>
+          <div class="choice-grid">
+            <label class="choice"><input name="services[]" type="checkbox" value="Regular maintenance" /><span>Regular maintenance</span></label>
+            <label class="choice"><input name="services[]" type="checkbox" value="Hedges and tidy-ups" /><span>Hedges &amp; tidy-ups</span></label>
+            <label class="choice"><input name="services[]" type="checkbox" value="Seasonal clean-ups" /><span>Seasonal clean-ups</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="choice-group">
+          <legend>Tools for the job <span>(optional)</span></legend>
+          <div class="choice-grid">
+            <label class="choice"><input name="tools[]" type="checkbox" value="Lawn mower" /><span>Lawn mower</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Line trimmer" /><span>Line trimmer</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Hedge trimmer" /><span>Hedge trimmer</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Secateurs" /><span>Secateurs</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Rake and shovel" /><span>Rake &amp; shovel</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Wheelbarrow" /><span>Wheelbarrow</span></label>
+          </div>
+        </fieldset>
         <label class="image-attachment">Add a garden photo <span>(optional)</span><input name="attachment" type="file" accept="image/*" /></label>
         <label class="privacy-consent"><input required name="privacy-consent" type="checkbox" /> <span>I have permission to provide these details and have read the <a href="#privacy">privacy notice</a>.</span></label>
         <button class="button button-dark" type="submit">Send enquiry <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></button>

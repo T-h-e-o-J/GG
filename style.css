@@ -107,13 +107,15 @@ a { color: inherit; text-decoration: none; }
 .quote-form input:focus, .quote-form textarea:focus { border-color: var(--green); }
 .choice-group { border: 1px solid var(--line); margin: 0; padding: 18px; }
 .choice-group legend { font-size: 12px; font-weight: 700; padding: 0 8px; }
-.choice-group legend span { font-weight: 400; opacity: 0.65; }
+.choice-group legend span, .image-attachment span { border: 1px solid rgba(59, 155, 67, 0.45); border-radius: 4px; color: var(--green); display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.05em; margin-left: 5px; padding: 2px 6px; text-transform: uppercase; vertical-align: 1px; }
 .choice-grid { display: grid; gap: 10px 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .choice { align-items: center; background: rgba(215, 239, 134, 0.18); border: 1px solid transparent; cursor: pointer; display: flex; font-size: 12px !important; font-weight: 500 !important; gap: 8px; min-height: 42px; padding: 9px 10px; transition: background 0.2s, border-color 0.2s, transform 0.2s; }
 .choice:hover { border-color: var(--green); transform: translateY(-1px); }
 .choice:has(input:checked) { background: var(--lime); border-color: var(--green); font-weight: 700 !important; }
 .choice input { accent-color: var(--green); flex: 0 0 auto; height: 16px; margin: 0; width: 16px; }
-.image-attachment span { font-weight: 400; opacity: 0.65; }
+.choice > svg { color: var(--orange); height: 17px; stroke-width: 2; width: 17px; }
+.choice > .tool-icon { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; }
+.choice > img.tool-icon { flex: 0 0 86px; height: 58px; object-fit: contain; width: 86px; }
 .image-attachment input { border: 0; cursor: pointer; font-size: 13px; padding: 8px 0; }
 .image-attachment input::file-selector-button { background: var(--lime); border: 0; border-radius: 99px; color: var(--ink); cursor: pointer; font: inherit; font-weight: 700; margin-right: 12px; padding: 9px 13px; }
 .quote-form .button { align-self: flex-start; margin-top: 7px; }

@@ -38,6 +38,8 @@
         <input type="hidden" name="_next" value="https://gooniusgardeners.vercel.app/" />
         <label>Your name<input required name="name" type="text" placeholder="e.g. Alex Smith" /></label>
         <label>Email or phone<input required name="contact" type="text" placeholder="How should we reach you?" /></label>
+        <label>Tell us anything else<textarea required name="job" rows="3" placeholder="Tell us about your garden or what needs doing..."></textarea></label>
+        <label class="image-attachment">Add a garden photo <span>(optional)</span><input name="attachment" type="file" accept="image/*" /></label>
         <fieldset class="choice-group">
           <legend>Choose the services you need <span>(optional)</span></legend>
           <div class="choice-grid">
@@ -51,16 +53,13 @@
         <fieldset class="choice-group">
           <legend>Choose the tools for the job <span>(optional)</span></legend>
           <div class="choice-grid">
-            <label class="choice"><input name="tools[]" type="checkbox" value="Lawn mower" /><span>Lawn mower</span></label>
-            <label class="choice"><input name="tools[]" type="checkbox" value="Line trimmer" /><span>Line trimmer</span></label>
-            <label class="choice"><input name="tools[]" type="checkbox" value="Hedge trimmer" /><span>Hedge trimmer</span></label>
-            <label class="choice"><input name="tools[]" type="checkbox" value="Secateurs" /><span>Secateurs</span></label>
-            <label class="choice"><input name="tools[]" type="checkbox" value="Rake and shovel" /><span>Rake &amp; shovel</span></label>
-            <label class="choice"><input name="tools[]" type="checkbox" value="Wheelbarrow" /><span>Wheelbarrow</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Lawn mower" /><img class="tool-icon" src="images/lawn-mower.png" alt="" /><span>Lawn mower</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Line trimmer" /><img class="tool-icon" src="images/line_trimmer.png" alt="" /><span>Line trimmer</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Hedge trimmer" /><img class="tool-icon" src="images/hedge-trimmer.png" alt="" /><span>Hedge trimmer</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Rake and shovel" /><img class="tool-icon" src="images/rake-shovel.png" alt="" /><span>Rake &amp; shovel</span></label>
+            <label class="choice"><input name="tools[]" type="checkbox" value="Wheelbarrow" /><img class="tool-icon" src="images/wheelbarrow.png" alt="" /><span>Wheelbarrow</span></label>
           </div>
         </fieldset>
-        <label>Tell us anything else<textarea required name="job" rows="3" placeholder="Tell us about your garden or what needs doing..."></textarea></label>
-        <label class="image-attachment">Add a garden photo <span>(optional)</span><input name="attachment" type="file" accept="image/*" /></label>
         <label class="privacy-consent"><input required name="privacy-consent" type="checkbox" /> <span>I have permission to provide these details and have read the <a href="index.html#privacy">privacy notice</a>.</span></label>
         <button class="button button-dark" type="submit">Send my plan <span class="action-icon" data-lucide="arrow-up-right" aria-hidden="true"></span></button>
         <p class="form-note">We’ll be in touch soon. You can also call <a href="tel:02102366599">0210 236 6599</a>.</p>
